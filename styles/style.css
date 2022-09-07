@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    max-width: 1280px;
+    margin: auto;
+    font-family: 'Myriad Pro Regular';
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 61px;
+    margin-bottom: 51px;
+}
+
+.logoName {
+    margin-bottom: 45px;
+}
+
+.changeColorLogo {
+    color: #4bcaff;
+}
+
+header .navMenu {
+    align-self: stretch;
+    text-align: center;
+    background-color: #35444f;
+
+}
+
+.navMenu li {
+    display: inline-block;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.navMenu li a {
+    color: #fff;
+    line-height: 69px;
+    font-size: 24px;
+}
+
+.navMenu li:hover {
+    background-color: #222f3a;
+    border-left: 1px solid silver;
+    border-right: 1px solid silver;
+}
+
+.logoName a {
+    font-size: 80px;
+    font-weight: 400;
+    color: black;
+}
+
+main {
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+}
+
+nav.verticalMenu {
+    border: 1px solid silver;
+    height: 399px;
+    width: 344px;
+}
+
+.verticalMenu li a {
+    font-size: 27px;
+    font-weight: 400;
+    color: #485863;
+    line-height: 80px;
+    padding-left: 44px;
+    padding-right: 109px;
+    white-space: nowrap;
+}
+
+.verticalMenu li:hover {
+    padding-left: 69px;
+    background-color: #dbdbdb;
+}
+
+.verticalMenu a:hover {
+    color: #0b0b0b;
+    font-style: bold;
+}
+
+.mainContent {
+    max-width: 885px;
+    margin-left: 52px;
+    margin-bottom: 51px;
+}
+
+.photoContent {
+    border: 1px solid silver;
+    display: flex;
+    justify-content: center;
+    height: 529px;
+    margin-bottom: 50px;
+}
+
+.photoContent img:hover {
+    transform: scale(1.2);
+}
+
+.photoContent img {
+    height: 318px;
+    align-self: center;
+    transition-duration: 500ms;
+}
+
+.textContent {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #2c2c2c;
+}
+
+footer {
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #b4b7b9;
+    margin-bottom: 30px;
+}
+
+.footerMenu li {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footerMenu li a:hover {
+    color: #3482a7;
+    text-decoration: underline;
+}
+
+.footerMenu li a {
+    color: #0c1927;
+    font-size: 28px;
+    line-height: 90px;
+    font-weight: 400;
+}
+
+.copyright {
+    align-self: center;
+    color: #010101;
+    font-size: 24px;
+    line-height: 90px;
+    font-weight: 400;
+}
+
+@media screen and (max-width:960px) {
+    main {
+        display: flex;
+        width: inherit;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+
+    header {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .mainContent {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    nav.verticalMenu {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .textContent p {
+        margin: 0 20px;
+    }
+
+    footer {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+}
